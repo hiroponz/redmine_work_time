@@ -141,8 +141,8 @@ private
     @first_date = Date.new(@this_year, @this_month, 1);
     @last_date = (@first_date >> 1) - 1;
     
-    @month_names = l(:wt_month_names).split(',');
-    @wday_name = l(:wt_week_day_names).split(',');
+    @month_names = l('date.abbr_month_names');
+    @wday_name = l('date.abbr_week_day_names');
     @wday_color = ["#faa", "#eee", "#eee", "#eee", "#eee", "#eee", "#aaf"];
     
     @link_params = {:controller=>"work_time", :id=>@project,
